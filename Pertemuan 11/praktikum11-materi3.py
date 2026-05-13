@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #====================================
 # Nama : Farras Rahman Hakim
 # NIM : J0403251088
@@ -29,4 +30,37 @@ def dfs(graph, start, visited=None):
             dfs(graph, neighbor, visited) # Rekursi untuk tetangga yang belum dikunjungi
 
 
+=======
+#====================================
+# Nama : Farras Rahman Hakim
+# NIM : J0403251088
+# KELAS : TPL B1
+#====================================
+# Implementasi DFS
+#====================================
+from collections import deque
+graph = {
+    'A': ['B', 'C'],
+    'B': ['D', 'E'],
+    'C': ['F', 'G'],
+    'D': [],
+    'E': [],
+    'F': []
+}
+
+def dfs(graph, start, visited=None):
+    #fungsi untuk melakukan penelusuran graph menggunakan dfs
+    #graph :  dicionary yang menyimpan graph
+    #node : menyimpan node yang akan dikunjungi
+    #visited : set untuk menyimpan node yang sudah dikunjungi
+    if visited is None:
+        visited = set() # Set untuk menyimpan node yang sudah dikunjungi
+    visited.add(start) # Tandai node saat ini sebagai sudah dikunjungi
+    print(start) # Kunjungi node
+    for neighbor in graph[start]: # Kunjungi semua tetangga
+        if neighbor not in visited:
+            dfs(graph, neighbor, visited) # Rekursi untuk tetangga yang belum dikunjungi
+
+
+>>>>>>> e8fe87d9f99109e9fc3362abdb3458300d0f17b3
 dfs(graph, 'A') # Memulai DFS dari node 'A'

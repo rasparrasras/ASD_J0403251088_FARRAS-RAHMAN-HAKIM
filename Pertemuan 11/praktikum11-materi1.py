@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #=========================================
 # Nama : Farras Rahman Hakim
 # NIM : J0403251088
@@ -15,4 +16,23 @@ graph ={
 }
 
 for node in graph:
+=======
+#=========================================
+# Nama : Farras Rahman Hakim
+# NIM : J0403251088
+# Kelas : TPL B1
+#=========================================
+# basic graph
+#=========================================
+
+
+graph ={
+    'A': ['B', 'C'],
+    'B': ['A', 'D'],
+    'C': ['A', 'D'],
+    'D': ['B', 'C']
+}
+
+for node in graph:
+>>>>>>> e8fe87d9f99109e9fc3362abdb3458300d0f17b3
     print(node, "->", graph[node])
